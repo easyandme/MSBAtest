@@ -38,7 +38,9 @@ function addOverlay() {
 } 
 
 $('#start_btn').click(function() {
-      $('.prelude, .slogan, .footer').fadeOut(500);
+      $('.prelude, .footer').fadeOut(500);
+      $('.slogan').fadeOut(1000);
+      $('.logo').addClass('hinge animatedSlow');
       $('#start').prepend(p);
       $('#progressbar').fadeIn(1000);
       setTimeout(function() {
