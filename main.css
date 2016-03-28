@@ -108,7 +108,7 @@ body div#start {
     position: relative;
     font-weight: bold;
     display: table;
-    margin: 200px auto auto; 
+    margin: 280px auto auto; 
     border: none;
     padding-left: 40px;
     background:transparent url(./images/start.png) no-repeat left;
@@ -120,7 +120,7 @@ body div#start {
 .intro_text {
     position: absolute;
     text-align: left;
-    top: 10px;
+    top: 24px;
     width: 80%;
     font-size: 1.05em;
     left: 10%;

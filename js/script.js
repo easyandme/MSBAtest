@@ -70,7 +70,7 @@ $('.choice').click(function() {
       $("#pg").text(k + 1 + "/13");
       if ($('.quiz').hasClass('slideInRight animated')) {$('.quiz').removeClass('slideInRight animated')};
       if ($('.play_btn>img').hasClass('spin begin')) {$('.play_btn>img').removeClass('spin begin')};
-      $('.quiz').addClass('slideOutLeft animatedFast'); 
+      $('.quiz').addClass('fadeOutLeft animatedFast'); 
       setTimeout(function() {
       k += 1;
       $('.quiz_text>p').html(q[k].describe); 
@@ -82,7 +82,7 @@ $('.choice').click(function() {
       $("#choiceB").html(q[k].B.describe);
       if (q[k].hasOwnProperty('C')) {$('#choiceC').html(q[k].C.describe)};
       if (q[k].hasOwnProperty('D')) {$('#choiceD').html(q[k].D.describe)};
-      $(".quiz").removeClass('slideOutLeft animatedFast').addClass('slideInRight animated');
+      $(".quiz").removeClass('fadeOutLeft animatedFast').addClass('slideInRight animated');
       $('.intro').text(' ');
       $('.play_btn>img').attr('src','./images/CD.png');
       }, 200);
