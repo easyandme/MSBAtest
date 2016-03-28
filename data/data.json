@@ -33,7 +33,7 @@
     } 
   },
   {
-    "describe": "<b>你是否使用过统计软件 如R, STATA, SAS等</b>",
+    "describe": "<b>你是否使用过统计软件 如R, STATA, SAS等？</b>",
     "image": "<img class='appendimage' alt='appendimage' src='./images/access.gif' >", 
     "genre": "soft",
     "A": {
@@ -51,7 +51,7 @@
     }
   },
   {
-    "describe": "<b>你是否学习过至少一门编程语言，如C,Java,Python？</b>", 
+    "describe": "<b>你是否学习过至少一门编程语言，如C, Java, Python？</b>", 
     "image": "<img class='appendimage' alt='appendimage' src='./images/java.gif' >", 
     "genre": "soft",
     "A": {
@@ -83,8 +83,7 @@
     } 
   },
   {
-    "describe": "<b>你对BA是什么有基本的了解吗？</b>", 
-    "image": "<img class='appendimage' alt='appendimage' src='./images/ba.gif' >", 
+    "describe": "<b>你对BA是什么有基本的了解吗？</b>",   
     "genre": "passion",
     "A": {
       "describe": "有点了解",
@@ -97,7 +96,7 @@
   },
   {
     "describe": "<b>你学习过统计课程吗？</b>", 
-    "image": "<img class='appendimage' alt='appendimage' src='./images/stats.gif' >", 
+    "image": "<img class='appendimage' alt='appendimage' src='./images/stat.gif' >", 
     "genre": "bg",
     "A": {
       "describe": "有学过",
@@ -130,7 +129,7 @@
   },
   {
     "describe": "<b>你未来希望从事的工作Analytics/Consultant相关工作吗</b>", 
-    "image": "<img class='appendimage' alt='appendimage' src='./images/pie.gif' >",
+    "image": "<img class='appendimage' alt='appendimage' src='./images/work.gif' >",
     "genre": "passion",
     "A": { 
       "describe": "想！",
@@ -149,7 +148,7 @@
   },
   {
     "describe": "<b>你接触过数据分析相关实习或者工作吗？</b>", 
-    "image": "<img class='appendimage' alt='appendimage' src='./images/tree.gif' >",
+    "image": "<img class='appendimage' alt='appendimage' src='./images/stats.gif' >",
     "genre": "past",
     "A": { 
       "describe": "有相关工作经验",
