@@ -49,7 +49,7 @@
     }
   },
   {
-    "describe": "<b>你是否学习过至少一门编程语言，如C,Jav,Python？</b>", 
+    "describe": "<b>你是否学习过至少一门编程语言，如C,Java,Python？</b>", 
     "genre": "soft",
     "A": {
       "describe": "有一个玩得比较溜",
