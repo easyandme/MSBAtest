@@ -38,7 +38,7 @@ function addOverlay() {
 } 
 
 $('#start_btn').click(function() {
-      $('.prelude, .slogan').fadeOut(500);
+      $('.prelude, .slogan, .footer').fadeOut(500);
       $('#start').prepend(p);
       $('#progressbar').fadeIn(1000);
       setTimeout(function() {
@@ -90,7 +90,7 @@ $('.choice').click(function() {
     }
       if (n > 13) { 
         $('.quiz, #progressbar').remove();
-        $('.result, .slogan').css('display', 'block').addClass('fadeInUp animatedSlow');
+        $('.result, .slogan, .footer').css('display', 'block').addClass('fadeInUp animatedSlow');
       var pretext = ''; 
       var perc, quotient, final_txt, middle;
       //"if" statements look stupid? fastest though
@@ -175,7 +175,7 @@ $.getJSON("data/data.json", function(e){
 
 $('.follow').click(function() { 
         addOverlay(); 
-        $('img[alt="QR"], img[alt="des"]').show();
+        $('img[alt="QR"]').show();
         $('#overlay').click(function() {
             $(this).remove(); 
             $('img[alt="QR"], img[alt="des"], .share_txt').hide();

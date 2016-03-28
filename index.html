@@ -13,8 +13,7 @@
 	</head>
 <body class="fadeIn animated noHover">
     <div style="margin:0 auto;display:none;">
-    <img alt="share" src="./images/CD2.png"/></div>
-    <audio hidden preload id="start_audio" src="./audios/t.mp3"></audio>
+    <img alt="share" src="./images/CD2.png"/></div> 
     <p class='slogan'><img alt='logo' src='./images/logo.png' /><br>微信公众号: MSBA留学汇</p>
 	<div id="start">
 	    <div class="wrapper">  
@@ -91,22 +90,42 @@
 	<img hidden alt="developer" width="80" src="./images/me.jpg" /> 
 	<img hidden alt="QR" width="80" src="./images/QR.jpg" />
 	<img hidden alt="des" width="250" src="./images/des.jpg" />
-	<p class="footer">made by BB Consulting<br>with <img alt="GoogleAnalytics" class="ga" width="250" src="./images/ga.png" /></p>
+	<p class="footer">made by BB Consulting<br>enhanced with <img alt="GoogleAnalytics" class="ga" width="250" src="./images/ga.png" /></p>
 	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
 	<script type="text/javascript" src="js/fastclick.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-</body> 
-<script type="text/javascript">
-	$(document).ready(function() {
-		function setHeight() {
-			windowHeight = $(window).innerHeight();
-			$('#start').css('min-height', windowHeight);
-		};
-		setHeight();
-		$(window).resize(function() {
+	<script type="text/javascript">
+		$(document).ready(function() {
+			function setHeight() {
+				windowHeight = $(window).innerHeight();
+				$('#start').css('min-height', windowHeight);
+			};
 			setHeight();
+			$(window).resize(function() {
+				setHeight();
+			});
+			$('body').on('touchmove', false);  
 		});
-		$('body').on('touchmove', false);  
-	});
-</script> 
+	</script> 
+	<script type='text/javascript'>
+	(function() {
+	    var c = document.createElement('script'); 
+	    c.type = 'text/javascript';
+	    c.async = true;
+	    c.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.clicki.cn/boot/52427';
+	    var h = document.getElementsByTagName('script')[0];
+	    h.parentNode.insertBefore(c, h);
+	})();
+	</script>
+	<script async>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-38451886-9', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</body> 
 </html>
