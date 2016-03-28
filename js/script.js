@@ -96,7 +96,7 @@ $('.choice').click(function() {
         $('.logo').removeClass('hinge animatedSlow');
         $('.result, .slogan, .footer').css('display', 'block').addClass('fadeInUp animatedSlow');
       var pretext = ''; 
-      var perc, quotient, final_txt, middle;
+      var perc, quotient, final_txt;
       //"if" statements look stupid? fastest though
       if (s >= 90) {
         s = Math.floor(Math.random()*9) + 90; 
@@ -107,7 +107,7 @@ $('.choice').click(function() {
       } else if ( s > 50 && s <= 70) { 
         s = Math.floor(Math.random()*19) + 50; 
         perc = "还差那么点儿意思";
-      } else if (s > 10 && s <= 50) { 
+      } else if (s > 30 && s <= 50) { 
         s = Math.floor(Math.random()*39) + 10; 
         perc = "哥们儿考虑转专业吧";
       } else { 
@@ -126,7 +126,7 @@ $('.choice').click(function() {
             $(this).text(Math.ceil(now));
           }
       }); 
-      document.title = pretext + '我与BA的契合度' + middle + quotient + final_txt;
+      document.title = pretext + '我与BA的契合度是' + quotient + '%';
       if (passion >= 6) {
         $('.d3').addClass('highlighted');
       } else if (passion >= 4 && passion < 6) {
