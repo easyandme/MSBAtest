@@ -226,6 +226,7 @@ body div#start {
   position: absolute;
   width: 100%;
   left: 0;
+  font-family: noto;
 }
 .result_title {
   height: 40px;
