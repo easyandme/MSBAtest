@@ -92,6 +92,7 @@ $('.choice').click(function() {
     }
       if (n > 13) { 
         $('.quiz, #progressbar').remove();
+        $('.logo').removeClass('hinge animatedSlow');
         $('.result, .slogan, .footer').css('display', 'block').addClass('fadeInUp animatedSlow');
       var pretext = ''; 
       var perc, quotient, final_txt, middle;
@@ -169,7 +170,7 @@ setInterval(function(){
 }, 2500);
 
 /*All the appending stuff*/
-var p = "<div hidden id='progressbar'><div><span id='pg'>1/13</span></div></div></div>";
+var p = "<div hidden id='progressbar'><div><span id='pg'>0/13</span></div></div></div>";
  
 $.getJSON("data/data.json", function(e){
         $.extend(qar, e);
