@@ -167,15 +167,15 @@ body div#start {
     text-align: center;
 }
 .appendimage { 
-  width: 160px;
+  width: 180px;
   margin-left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
-  margin-top: 20px;
+  margin-top: 20px; 
 } 
 .choices {
   position: relative;
-  margin: 30px auto auto;
+  margin: 20px auto auto;
 }
 .choice {
     position: relative;

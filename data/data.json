@@ -1,6 +1,6 @@
 [
   {
-    "describe": "<b>你喜欢或擅长与数字打交道吗?</b>",  
+    "describe": "<b>你喜欢或擅长与数字打交道吗?</b>",    
     "genre": "passion",
     "A": { 
       "describe": "喜欢！比起和人打交道，数字有意思多了！",
@@ -18,7 +18,8 @@
     } 
   },
   {
-    "describe": "<b>你目前所学的专业是否为理工科？</b>", 
+    "describe": "<b>你目前所学的专业是否为理工科？</b>",  
+    "image": "<img class='appendimage' alt='appendimage' src='./images/msc.gif' >",
     "genre": "bg",
     "A": {
       "describe": "是",
@@ -32,7 +33,8 @@
     } 
   },
   {
-    "describe": "<b>你是否使用过统计软件 如R,STATS,SAS等</b>", 
+    "describe": "<b>你是否使用过统计软件 如R, STATA, SAS等</b>",
+    "image": "<img class='appendimage' alt='appendimage' src='./images/access.gif' >", 
     "genre": "soft",
     "A": {
       "describe": "玩得很溜",
@@ -50,6 +52,7 @@
   },
   {
     "describe": "<b>你是否学习过至少一门编程语言，如C,Java,Python？</b>", 
+    "image": "<img class='appendimage' alt='appendimage' src='./images/java.gif' >", 
     "genre": "soft",
     "A": {
       "describe": "有一个玩得比较溜",
@@ -67,6 +70,7 @@
   },
   {
     "describe": "<b>你擅长或愿意与他人合作吗？</b>", 
+    "image": "<img class='appendimage' alt='appendimage' src='./images/tree.gif' >", 
     "genre": "passion",
     "A": {
       "describe": "吼阿！最喜欢和小伙伴一起了",
@@ -80,6 +84,7 @@
   },
   {
     "describe": "<b>你对BA是什么有基本的了解吗？</b>", 
+    "image": "<img class='appendimage' alt='appendimage' src='./images/ba.gif' >", 
     "genre": "passion",
     "A": {
       "describe": "有点了解",
@@ -92,6 +97,7 @@
   },
   {
     "describe": "<b>你学习过统计课程吗？</b>", 
+    "image": "<img class='appendimage' alt='appendimage' src='./images/stats.gif' >", 
     "genre": "bg",
     "A": {
       "describe": "有学过",
@@ -105,6 +111,7 @@
   },
   {
     "describe": "<b>你学习过微积分、线性代数课程吗？</b>", 
+    "image": "<img class='appendimage' alt='appendimage' src='./images/linear.gif' >", 
     "genre": "bg",
     "A": {
       "describe": "上过一门",
@@ -141,8 +148,8 @@
     }
   },
   {
-    "describe": "<b>你接触过数据分析相关实习或者工作吗？</b>",
-    "music": "<audio hidden preload class='songs' id='song' src='audios/h.mp3'></audio>",
+    "describe": "<b>你接触过数据分析相关实习或者工作吗？</b>", 
+    "image": "<img class='appendimage' alt='appendimage' src='./images/tree.gif' >",
     "genre": "past",
     "A": { 
       "describe": "有相关工作经验",
@@ -155,14 +162,13 @@
       "past_score": 1
     },
     "C": {
-      "describe": "没太大兴趣",
+      "describe": "完全没经验",
       "bonus": 2,
       "past_score": 0
     }
   }, 
   {
-    "describe": "<b>你了解BA相关院校吗？</b>",
-    "music": "<audio hidden preload class='songs' id='song' src='audios/l.mp3'></audio>",
+    "describe": "<b>你了解BA相关院校吗？</b>", 
     "genre": "passion",
     "A": {
       "describe": "了解过",

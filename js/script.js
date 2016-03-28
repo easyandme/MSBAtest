@@ -75,7 +75,8 @@ $('.choice').click(function() {
       $('.quiz').addClass('fadeOutLeft animatedFast'); 
       setTimeout(function() {
       k += 1;
-      $('.quiz_text').prepend(q[k].image); 
+      $('.appendimage').remove(); 
+      $('.quiz_text').prepend(q[k].image);  
       $('.quiz_text>p').html(q[k].describe)
       isPlaying = true; 
       $('.play_btn>img').addClass('spin begin'); 
@@ -86,8 +87,7 @@ $('.choice').click(function() {
       if (q[k].hasOwnProperty('C')) {$('#choiceC').html(q[k].C.describe)};
       if (q[k].hasOwnProperty('D')) {$('#choiceD').html(q[k].D.describe)};
       $(".quiz").removeClass('fadeOutLeft animatedFast').addClass('slideInRight animated');
-      $('.intro').text(' ');
-      $('.play_btn>img').attr('src','./images/CD.png');
+      $('.intro').text(' '); 
       }, 200);
       playN = 0;
     }
