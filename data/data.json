@@ -1,0 +1,206 @@
+[
+  {
+    "describe": "<b>你喜欢或擅长与数字打交道吗?</b>",  
+    "genre": "sense",
+    "A": { 
+      "describe": "喜欢！比起和人打交道，数字有意思多了！",
+      "bonus": 7,
+      "r_score": 1
+    },
+    "B": {
+      "describe": "还阔以",
+      "bonus": 5,
+      "r_score": 1
+    },
+    "C": {
+      "describe": "见到数字就头晕",
+      "bonus": 0,
+      "r_score": 1
+    } 
+  },
+  {
+    "describe": "<b>你目前所学的专业是否为理工科？</b>", 
+    "genre": "sense",
+    "A": {
+      "describe": "是",
+      "bonus": 7,
+      "r_score": 1
+    },
+    "B": {  
+      "describe": "不是",
+      "bonus": 4,
+      "r_score": 1
+    } 
+  },
+  {
+    "describe": "<b>你是否使用过统计软件 如R,STATS,SAS等</b>", 
+    "genre": "sense",
+    "A": {
+      "describe": "玩得很溜",
+      "bonus": 10,
+      "sense_score": 1
+    },
+    "B": {
+      "describe": "用过，不熟",
+      "bonus": 7,
+      "sense_score": 1
+    },
+    "C": { 
+      "describe": "压根没用过"
+    }
+  },
+  {
+    "describe": "<b>你是否学习过至少一门编程语言，如C,Java，Python？</b>", 
+    "genre": "sense",
+    "A": {
+      "describe": "有一个玩得比较溜",
+      "bonus": 10,
+      "sense_score": 1
+    },
+    "B": {
+      "describe": "在学",
+      "bonus": 5,
+      "sense_score": 1
+    },
+    "C": { 
+      "describe": "对编程无感"
+    }
+  },
+  {
+    "describe": "<b>你擅长或愿意与他人合作吗？</b>", 
+    "genre": "decision",
+    "A": {
+      "describe": "吼阿！最喜欢和小伙伴一起了",
+      "bonus": 5,
+      "decision_score": 1
+    },
+    "B": {
+      "describe": "更喜欢单干",
+      "bonus": 2,
+      "sense_score": 1
+    } 
+  },
+  {
+    "describe": "<b>你对BA是什么有基本的了解吗？</b>", 
+    "genre": "decision",
+    "A": {
+      "describe": "有点知道大概是干什么的",
+      "bonus": 4,
+      "decision_score": 1
+    },
+    "B": {
+      "describe": "完全没了解"
+    } 
+  },
+  {
+    "describe": "<b>你学习过统计课程吗？</b>", 
+    "genre": "memo",
+    "A": {
+      "describe": "有学过",
+      "bonus": 7,
+      "sense_score": 1
+    },
+    "B": { 
+      "describe": "没",
+      "bonus": 0,
+      "memo_score": 1
+    } 
+  },
+  {
+    "describe": "<b>你学习过微积分、线性代数课程吗？</b>", 
+    "genre": "memo",
+    "A": {
+      "describe": "上过一门",
+      "bonus": 5,
+      "sense_score": 1
+    },
+    "B": {
+      "describe": "都上过",
+      "bonus": 10,
+      "sense_score": 1
+    },
+    "C": { 
+      "describe": "都没上过",
+      "bonus": 0,
+      "memo_score": 1
+    }
+  },
+  {
+    "describe": "<b>你未来希望从事的工作Analytics/Consultant相关工作吗</b>", 
+    "genre": "memo",
+    "A": { 
+      "describe": "想！",
+      "bonus": 7,
+      "sense_score": 1
+    },
+    "B": {
+      "describe": "看情况，不排斥",
+      "bonus": 5,
+      "sense_score": 1
+    },
+    "C": {
+      "describe": "没太大兴趣",
+      "bonus": 4,
+      "memo_score": 1
+    }
+  },
+  {
+    "describe": "<b>你接触过数据分析相关实习或者工作吗？</b>",
+    "music": "<audio hidden preload class='songs' id='song' src='audios/h.mp3'></audio>",
+    "genre": "memo",
+    "A": { 
+      "describe": "有相关经验",
+      "bonus": 10,
+      "sense_score": 1
+    },
+    "B": {
+      "describe": "没有",
+      "bonus": 3,
+      "sense_score": 1
+    } 
+  }, 
+  {
+    "describe": "<b>你了解BA相关院校吗？</b>",
+    "music": "<audio hidden preload class='songs' id='song' src='audios/l.mp3'></audio>",
+    "genre": "knowledge",
+    "A": {
+      "describe": "了解过",
+      "bonus": 6,
+      "knowledge_score": 1
+    },
+    "B": { 
+      "describe": "还没开始",
+      "bonus": 2,
+      "sense_score": 1
+    } 
+  },
+  {
+    "describe": "<b>你的GMAT/GRE上700/320了吗？</b>",
+    "music": "<audio hidden preload class='songs' id='song' src='audios/m.mp3'></audio>",
+    "genre": "knowledge",
+    "A": { 
+      "describe": "必须的",
+      "bonus": 10,
+      "sense_score": 1
+    },
+    "B": {
+      "describe": "还在刷",
+      "bonus": 7,
+      "knowledge_score": 1
+    } 
+  },
+  {
+    "describe": "<b>你的托福上100了吗？</b>", 
+    "genre": "knowledge",
+    "A": {
+      "describe": "上了",
+      "bonus": 7,
+      "knowledge_score": 1
+    }, 
+    "B": {
+      "describe": "没上百",
+      "bonus": 0,
+      "sense_score": 1
+    } 
+  } 
+]
