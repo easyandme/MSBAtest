@@ -75,7 +75,8 @@ $('.choice').click(function() {
       $('.quiz').addClass('fadeOutLeft animatedFast'); 
       setTimeout(function() {
       k += 1;
-      $('.quiz_text>p').html(q[k].describe); 
+      $('.quiz_text').prepend(q[k].image); 
+      $('.quiz_text>p').html(q[k].describe)
       isPlaying = true; 
       $('.play_btn>img').addClass('spin begin'); 
       if (q[k].hasOwnProperty('C')) {$('#choiceC').css('display', 'block')} else {$('#choiceC').css('display', 'none')};

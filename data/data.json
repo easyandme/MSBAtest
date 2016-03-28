@@ -123,6 +123,7 @@
   },
   {
     "describe": "<b>你未来希望从事的工作Analytics/Consultant相关工作吗</b>", 
+    "image": "<img class='appendimage' alt='appendimage' src='./images/pie.gif' >",
     "genre": "passion",
     "A": { 
       "describe": "想！",
