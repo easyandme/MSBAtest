@@ -99,7 +99,7 @@ $('.choice').click(function() {
       var perc, quotient, final_txt;
       //"if" statements look stupid? fastest though
       if (s >= 90) {
-        s = Math.floor(Math.random()*9) + 90; 
+        s = Math.floor(Math.random()*10) + 90; 
         perc = "申请BA牛校一申一个准"; 
       } else if ( s > 70 && s < 90) { 
         s = Math.floor(Math.random()*19) + 70; 

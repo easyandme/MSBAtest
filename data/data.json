@@ -113,14 +113,14 @@
     "image": "<img class='appendimage' alt='appendimage' src='./images/linear.gif' >", 
     "genre": "bg",
     "A": {
-      "describe": "上过一门",
-      "bonus": 5,
-      "b_score": 1
-    },
-    "B": {
       "describe": "都上过",
       "bonus": 10,
       "b_score": 2
+    },
+    "B": {
+      "describe": "上过一门",
+      "bonus": 5,
+      "b_score": 1
     },
     "C": { 
       "describe": "都没上过",
@@ -197,11 +197,16 @@
     "describe": "<b>你的托福上100了吗？</b>", 
     "genre": "bg",
     "A": {
-      "describe": "上了",
-      "bonus": 7,
+      "describe": "Waive~/110+",
+      "bonus": 8,
       "b_score": 1
     }, 
     "B": {
+      "describe": "上了",
+      "bonus": 5,
+      "b_score": 1
+    }, 
+    "C": {
       "describe": "没上百",
       "bonus": 0,
       "b_score": 1
