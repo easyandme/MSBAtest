@@ -10,7 +10,7 @@ var l = 0; //l for progress
 var s = 0; //s for total scores
 var n = 1; //n for question number in test 
 var qar = []; //qar for questions array
-var playN = 0, rhythm = 0, sense = 0, memo = 0, deci = 0, know = 0;
+var playN = 0, passion = 0, bg = 0, soft = 0, past = 0, know = 0;
 var r, w, x, y, z, o; // genre stars
 var isPlaying = false;
 
@@ -57,14 +57,14 @@ $('.choice').click(function() {
       if (k < 13) {
       m = o[u].bonus || 0;
       s += m; 
-      r = o[u].r_score || 0;
-      rhythm += r;
-      w = o[u].sense_score || 0;
-      sense += w;
-      x = o[u].memo_score || 0;
-      memo += x;
-      y = o[u].decision_score || 0;
-      deci += y;
+      r = o[u].p_score || 0;
+      passion += r;
+      w = o[u].b_score || 0;
+      bg += w;
+      x = o[u].s_score || 0;
+      soft += x;
+      y = o[u].past_score || 0;
+      past += y;
       z = o[u].knowledge_score || 0;
       know += z;  
       $("#pg").text(k + 1 + "/13");
@@ -99,10 +99,10 @@ $('.choice').click(function() {
         perc = "申请BA牛校一申一个准"; 
       } else if ( s > 70 && s < 90) { 
         s = Math.floor(Math.random()*19) + 70; 
-        perc = "还差那么点儿意思";
+        perc = "用心准备会很有希望哦";
       } else if ( s > 50 && s <= 70) { 
         s = Math.floor(Math.random()*19) + 50; 
-        perc = "哥们儿考虑转专业吧";
+        perc = "还差那么点儿意思";
       } else if (s > 10 && s <= 50) { 
         s = Math.floor(Math.random()*39) + 10; 
         perc = "哥们儿考虑转专业吧";
@@ -123,40 +123,40 @@ $('.choice').click(function() {
           }
       }); 
       document.title = pretext + '我与BA的契合度' + middle + quotient + final_txt;
-      if (rhythm == 2) {
+      if (passion >= 6) {
+        $('.d3').addClass('highlighted');
+      } else if (passion >= 4 && passion < 6) {
+        $('.d2').addClass('highlighted');  
+      } else {
+        $('.d1').addClass('highlighted');  
+      }
+      if (bg >= 7) {
         $('.a3').addClass('highlighted');
-      } else if (rhythm == 1) {
+      } else if (bg >= 4 && bg < 7) {
         $('.a2').addClass('highlighted');  
       } else {
         $('.a1').addClass('highlighted');  
       }
-      if (sense == 2) {
+      if (soft > 3) {
         $('.b3').addClass('highlighted');
-      } else if (sense == 1) {
+      } else if (soft > 1 && soft <= 3) {
         $('.b2').addClass('highlighted');  
       } else {
         $('.b1').addClass('highlighted');  
       }
-      if (memo >= 3) {
-        $('.c3').addClass('highlighted');
-      } else if (memo > 1 && memo < 3) {
-        $('.c2').addClass('highlighted');  
-      } else {
-        $('.c1').addClass('highlighted');  
-      }
-      if (deci == 2) {
-        $('.d3').addClass('highlighted');
-      } else if (deci == 1) {
-        $('.d2').addClass('highlighted');  
-      } else {
-        $('.d1').addClass('highlighted');  
-      } 
-      if (know >= 3) {
+      if (past == 2) {
         $('.e3').addClass('highlighted');
-      } else if (know > 1) {
+      } else if (past == 1) {
         $('.e2').addClass('highlighted');  
       } else {
         $('.e1').addClass('highlighted');  
+      } 
+      if (s >= 80) {
+        $('.c3').addClass('highlighted');
+      } else if (s >= 60 && s < 80) {
+        $('.c2').addClass('highlighted');  
+      } else {
+        $('.c1').addClass('highlighted');  
       }
     }
 });
