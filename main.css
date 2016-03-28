@@ -167,8 +167,10 @@ body div#start {
     text-align: center;
 }
 .appendimage { 
+  width: 160px;
   margin-left: 50%;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
   margin-top: 20px;
 } 
 .choices {
