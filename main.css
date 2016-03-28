@@ -15,6 +15,12 @@
     font-style: normal; 
 }
 
+@font-face {
+    font-family: 'noto'; 
+    src: url('./fonts/raleway-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'ralewaybold';
@@ -268,6 +274,7 @@ body div#start {
     bottom: 20px; 
     font-size: 12px;
     text-align: center;
+    font-family: noto;
 }
 .ga {
   width: 100px;
@@ -327,6 +334,7 @@ body div#start {
   z-index: 999;
   top: .75em;
   font-size: 12px;
+  line-height: 1em;
 }
 img[alt="logo"] {
   display: inline-block;
