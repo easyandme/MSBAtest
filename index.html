@@ -110,6 +110,7 @@
 		});
 	</script> 
 	<script> 
+	$(document).ready(function() {
 		var myimages=new Array()
 		function preloadimages(){
 		for (i=0;i<preloadimages.arguments.length;i++){
@@ -118,6 +119,7 @@
 		}
 		} 
 	    setTimeout(preloadimages("./images/msc.gif","./images/access.gif","./images/java.gif","./images/tree.gif","./images/stat.gif","./images/linear.gif","./images/stats.gif"), 500); 
+    });
 </script>
 	<script type='text/javascript'>
 	(function() {
