@@ -32,7 +32,7 @@
 	        		<p>Copyright 2016 BB Consulting</p>
 	        	</div> 
 	        	<div class="choices">
-	        		<button data-choice="A" id="choiceA" class="choice">喜欢！比和人打交道有意思多了！</button><br>
+	        		<button data-choice="A" id="choiceA" class="choice"><span style="display: inline-block;line-height: 1.25em;">喜欢！比和人打交道有意思多了！</span></button><br>
 					<button data-choice="B" id="choiceB" class="choice">还阔以</button><br>
 					<button data-choice="C" id="choiceC" class="choice">见到数字就头晕</button><br>
 					<button data-choice="D" id="choiceD" class="choice"></button>
@@ -52,13 +52,13 @@
 	        	<div class="tags">
 	        		<div class="tag1 tag">
 	        			<p>硬背景</p>
-	        			<label class="a1">较弱</label>
+	        			<label class="a1">短板</label>
 	        			<label class="a2">不错</label>
 	        			<label class="a3">牛逼</label>
 	        		</div>
 	        		<div class="tag2 tag">
 	        			<p>软实力</p>
-	        			<label class="b1">较弱</label>
+	        			<label class="b1">够呛</label>
 	        			<label class="b2">还行</label>
 	        			<label class="b3">深厚</label>
 	        		</div>
@@ -71,8 +71,8 @@
 	        		<div class="tag4 tag">
 	        			<p>有兴趣</p>
 	        			<label class="d1">才怪</label>
-	        			<label class="d2">一般</label>
-	        			<label class="d3">得很</label>
+	        			<label class="d2">似的</label>
+	        			<label class="d3">十足</label>
 	        		</div>
 	        		<div class="tag5 tag">
 	        			<p>相关经历</p>
@@ -107,19 +107,8 @@
 				setHeight();
 			}); 
 
-					$('body').on('touchmove', false);
+			$('body').on('touchmove', false);
  
-
-			$(window).on('orientationchange', function(){ 
-			  if (window.orientation == 0) // Portrait
-			  {
-			    $('body').on('touchmove', false); 
-			  }
-			  else // Landscape
-			  {
-			    $('body').on('touchmove', true); 
-			  }
-			});
 		});
 	</script> 
 	<script> 

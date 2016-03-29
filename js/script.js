@@ -90,23 +90,24 @@ $('.choice').click(function() {
       $('.intro').text(' '); 
       }, 200);
       playN = 0;
+      console.log(passion);
     }
       if (n > 13) { 
         $('.quiz, #progressbar').remove();
         $('.logo').removeClass('hinge animatedSlow');
         $('.result, .slogan, .footer').css('display', 'block').addClass('fadeInUp animatedSlow');
       var pretext = ''; 
-      var perc, quotient, final_txt;
+      var perc, quotient;
       //"if" statements look stupid? fastest though
       if (s >= 90) {
-        s = Math.floor(Math.random()*10) + 90; 
+        s = Math.floor(Math.random()*5) + 95; 
         perc = "申请BA牛校一申一个准"; 
       } else if ( s > 70 && s < 90) { 
-        s = Math.floor(Math.random()*19) + 70; 
+        s = Math.floor(Math.random()*15) + 79; 
         perc = "用心准备会很有希望哦";
       } else if ( s > 50 && s <= 70) { 
-        s = Math.floor(Math.random()*19) + 50; 
-        perc = "还差那么点儿意思";
+        s = Math.floor(Math.random()*19) + 55; 
+        perc = "需要跟着我们继续努力哦";
       } else if (s > 30 && s <= 50) { 
         s = Math.floor(Math.random()*39) + 10; 
         perc = "哥们儿考虑转专业吧";

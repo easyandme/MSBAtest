@@ -55,7 +55,7 @@
     "image": "<img class='appendimage' alt='appendimage' src='./images/java.gif' >", 
     "genre": "soft",
     "A": {
-      "describe": "有一个玩得比较溜",
+      "describe": "有一门用得比较熟",
       "bonus": 10,
       "s_score": 2
     },
@@ -73,7 +73,7 @@
     "image": "<img class='appendimage' alt='appendimage' src='./images/tree.gif' >", 
     "genre": "passion",
     "A": {
-      "describe": "吼阿！最喜欢和小伙伴一起了",
+      "describe": "<span style='display:inline-block;line-height:1.25em'>吼阿！最喜欢和小伙伴一起了</span>",
       "bonus": 5,
       "p_score": 1
     },

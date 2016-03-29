@@ -183,13 +183,13 @@ body div#start {
     margin: 4px auto;
     display: table;
     padding-right: 17px;
-    padding-left: 25px;
+    padding-left: 20px;
     width: 203px;
     height: 50px;
     color: #fff;
     outline: none;
     border-radius: 11px;
-    background-color: #03C0E3;
+    background-color: #A16AEC;
     text-align: left;
     font-size: 15px;
     border-color: #fff;
@@ -206,7 +206,7 @@ body div#start {
   background-color: #7ed321;
 }
 #choiceC { 
-  background-color: #f5a623;
+  background-color: #E4755D;
 }
 #choiceD {
   display: none;
