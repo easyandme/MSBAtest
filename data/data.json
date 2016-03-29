@@ -180,8 +180,7 @@
     } 
   },
   {
-    "describe": "<b>你的GMAT/GRE上700/320了吗？</b>",
-    "music": "<audio hidden preload class='songs' id='song' src='audios/m.mp3'></audio>",
+    "describe": "<b>你的GMAT/GRE上700/320了吗？</b>", 
     "genre": "bg",
     "A": { 
       "describe": "必须的",
