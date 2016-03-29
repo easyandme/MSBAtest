@@ -50,6 +50,7 @@
 
 html {
   overflow: hidden;
+  background-color: #FDF2F2;
 }
 body {
   background-color:  #fff;
@@ -1003,7 +1004,7 @@ img[alt="QR"] {
   }
 }
 
-@media (max-device-width: 480px) and (orientation: landscape) {
+@media (max-device-width: 800px) and (orientation: landscape) {
   html {
     overflow: scroll; 
   }
@@ -1012,5 +1013,8 @@ img[alt="QR"] {
   }
   .footer {
     position: relative;
+  }
+  .wrapper {
+    top: 50px;
   }
 }
