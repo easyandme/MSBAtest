@@ -136,7 +136,7 @@ $('.choice').click(function() {
       } else {
         $('.d1').addClass('highlighted');  
       }
-      if (bg >= 7) {
+      if (bg >= 8) {
         $('.a3').addClass('highlighted');
         $('.follow').css('display','none');
         $('.post').css('display','table');
@@ -166,9 +166,6 @@ $('.choice').click(function() {
       }
       if (past == 2) {
         $('.e3').addClass('highlighted');
-        $('.follow').css('display','none');
-        $('.post').css('display','table');
-        $('.post_link').text('想在美国实习？你有CPT么！').attr('href','http://mp.weixin.qq.com/s?__biz=MzI4NDE1NTM0MQ==&mid=403599888&idx=1&sn=1b714b16259273cb19455115352c19ec&scene=1&srcid=0329N0QLZ5m5dKkHd9Uiwjeu#wechat_redirect');
       } else if (past == 1) {
         $('.e2').addClass('highlighted');    
         $('.follow').css('display','none');
@@ -183,7 +180,9 @@ $('.choice').click(function() {
       } else if (s >= 60 && s < 80) {
         $('.c2').addClass('highlighted'); 
       } else {
-        $('.c1').addClass('highlighted');  
+        $('.c1').addClass('highlighted');     
+        $('.follow').css('display','table'); 
+        $('.post').css('display','none'); 
       }
       if (gmat == 1) {
           $('.follow').css('display','none');
