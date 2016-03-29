@@ -107,13 +107,14 @@
 				setHeight();
 			}); 
 
-		    $(window).resize(
-				function() { 
-					if (screen.width < screen.height) {
+
+            setInterval(function() { 
+				if (screen.width > screen.height) {
+					$('body').on('touchmove', true);
+				} else { 
 					$('body').on('touchmove', false);
-					}  
-			} 
-			); 
+				}
+			}, 100);
 
 			$(window).on('orientationchange', function(){ 
 			  if (window.orientation == 0) // Portrait
