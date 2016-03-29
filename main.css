@@ -1002,3 +1002,15 @@ img[alt="QR"] {
     left: 30%;
   }
 }
+
+@media (max-device-width: 480px) and (orientation: landscape) {
+  html {
+    overflow: scroll; 
+  }
+  body {
+    overflow: scroll;
+  }
+  .footer {
+    position: relative;
+  }
+}
