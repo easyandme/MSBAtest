@@ -105,8 +105,18 @@
 			setHeight();
 			$(window).resize(function() {
 				setHeight();
+			});  
+
+			$(window).on("orientationchange",function(){
+			  if(window.orientation == 0) // Portrait
+			  {
+			    $('body').on('touchmove', false); 
+			  }
+			  else // Landscape
+			  {
+			    $('body').on('touchmove', true); 
+			  }
 			});
-			$('body').on('touchmove', false);  
 		});
 	</script> 
 	<script> 

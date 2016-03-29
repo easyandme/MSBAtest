@@ -1012,7 +1012,8 @@ img[alt="QR"] {
     overflow: scroll;
   }
   .footer {
-    position: relative;
+    position: absolute;
+    top: 600px;
   }
   .wrapper {
     top: 50px;
