@@ -107,9 +107,13 @@
 				setHeight();
 			}); 
 
-			if (window.innerWidth < window.innerHeight) {
-			$('body').on('touchmove', false);
-			}  
+		    $(window).resize(
+				function() { 
+					if (screen.width < screen.height) {
+					$('body').on('touchmove', false);
+					}  
+			} 
+			); 
 
 			$(window).on('orientationchange', function(){ 
 			  if (window.orientation == 0) // Portrait
