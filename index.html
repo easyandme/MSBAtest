@@ -105,11 +105,14 @@
 			setHeight();
 			$(window).resize(function() {
 				setHeight();
-			});
-			$('body').on('touchmove', false);  
+			}); 
 
-			$(window).on("orientationchange", function(){
-			  if(window.orientation == 0) // Portrait
+			if (window.innerWidth < window.innerHeight) {
+			$('body').on('touchmove', false);
+			}  
+
+			$(window).on('orientationchange', function(){ 
+			  if (window.orientation == 0) // Portrait
 			  {
 			    $('body').on('touchmove', false); 
 			  }
