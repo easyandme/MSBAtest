@@ -10,8 +10,8 @@ var l = 0; //l for progress
 var s = 0; //s for total scores
 var n = 1; //n for question number in test 
 var qar = []; //qar for questions array
-var playN = 0, passion = 0, bg = 0, soft = 0, past = 0, know = 0;
-var r, w, x, y, z, o; // genre stars
+var playN = 0, passion = 0, bg = 0, soft = 0, past = 0, know = 0, gmat = 0;
+var r, w, x, y, z, o, t; // genre stars
 var isPlaying = false;
 
 /* append first song onto the board */
@@ -69,6 +69,8 @@ $('.choice').click(function() {
       past += y;
       z = o[u].knowledge_score || 0;
       know += z;  
+      t = o[u].wow || 0;
+      gmat += t;
       $("#pg").text(k + 1 + "/13");
       if ($('.quiz').hasClass('slideInRight animated')) {$('.quiz').removeClass('slideInRight animated')};
       if ($('.play_btn>img').hasClass('spin begin')) {$('.play_btn>img').removeClass('spin begin')};
@@ -89,8 +91,7 @@ $('.choice').click(function() {
       $(".quiz").removeClass('fadeOutLeft animatedFast').addClass('slideInRight animated');
       $('.intro').text(' '); 
       }, 200);
-      playN = 0;
-      console.log(passion);
+      playN = 0; 
     }
       if (n > 13) { 
         $('.quiz, #progressbar').remove();
@@ -137,31 +138,57 @@ $('.choice').click(function() {
       }
       if (bg >= 7) {
         $('.a3').addClass('highlighted');
+        $('.follow').css('display','none');
+        $('.post').css('display','table');
+        $('.post_link').text('想在美国实习？你有CPT么！').attr('href','http://mp.weixin.qq.com/s?__biz=MzI4NDE1NTM0MQ==&mid=403599888&idx=1&sn=1b714b16259273cb19455115352c19ec&scene=1&srcid=0329N0QLZ5m5dKkHd9Uiwjeu#wechat_redirect');
       } else if (bg >= 4 && bg < 7) {
-        $('.a2').addClass('highlighted');  
+        $('.a2').addClass('highlighted'); 
+        $('.follow').css('display','none'); 
+        $('.post').css('display','table');
       } else {
-        $('.a1').addClass('highlighted');  
+        $('.a1').addClass('highlighted'); 
+        $('.post').css('display','table'); 
+        $('.post').css('display','table');
       }
       if (soft > 3) {
-        $('.b3').addClass('highlighted');
+        $('.b3').addClass('highlighted'); 
+        $('.follow').css('display','none');
+        $('.post').css('display','table');
+        $('.post_link').text('想在美国实习？你有CPT么！').attr('href','http://mp.weixin.qq.com/s?__biz=MzI4NDE1NTM0MQ==&mid=403599888&idx=1&sn=1b714b16259273cb19455115352c19ec&scene=1&srcid=0329N0QLZ5m5dKkHd9Uiwjeu#wechat_redirect');
       } else if (soft > 1 && soft <= 3) {
         $('.b2').addClass('highlighted');  
+        $('.follow').css('display','none');
+        $('.post').css('display','table');
       } else {
-        $('.b1').addClass('highlighted');  
+        $('.b1').addClass('highlighted'); 
+        $('.follow').css('display','none');  
+        $('.post').css('display','table');
       }
       if (past == 2) {
         $('.e3').addClass('highlighted');
+        $('.follow').css('display','none');
+        $('.post').css('display','table');
+        $('.post_link').text('想在美国实习？你有CPT么！').attr('href','http://mp.weixin.qq.com/s?__biz=MzI4NDE1NTM0MQ==&mid=403599888&idx=1&sn=1b714b16259273cb19455115352c19ec&scene=1&srcid=0329N0QLZ5m5dKkHd9Uiwjeu#wechat_redirect');
       } else if (past == 1) {
-        $('.e2').addClass('highlighted');  
+        $('.e2').addClass('highlighted');    
+        $('.follow').css('display','none');
+        $('.post').css('display','table');
       } else {
-        $('.e1').addClass('highlighted');  
+        $('.e1').addClass('highlighted');     
+        $('.follow').css('display','none'); 
+        $('.post').css('display','table'); 
       } 
       if (s >= 80) {
         $('.c3').addClass('highlighted');
       } else if (s >= 60 && s < 80) {
-        $('.c2').addClass('highlighted');  
+        $('.c2').addClass('highlighted'); 
       } else {
         $('.c1').addClass('highlighted');  
+      }
+      if (gmat == 1) {
+          $('.follow').css('display','none');
+          $('.post').css('display','table');
+          $('.post_link').text('BBC学姐一战GMAT770心经').attr('href','http://mp.weixin.qq.com/s?__biz=MzI4NDE1NTM0MQ==&mid=404046836&idx=1&sn=6516691975f9b99bef122d7655e8423c&scene=0#wechat_redirect');
       }
     }
 });

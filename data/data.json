@@ -109,7 +109,7 @@
     } 
   },
   {
-    "describe": "<b>你学习过微积分、线性代数课程吗？</b>", 
+    "describe": "<b>你学习过微积分、线性代数吗？</b>", 
     "image": "<img class='appendimage' alt='appendimage' src='./images/linear.gif' >", 
     "genre": "bg",
     "A": {
@@ -189,7 +189,8 @@
     },
     "B": {
       "describe": "还在刷",
-      "bonus": 7
+      "bonus": 7,
+      "wow": 1
     } 
   },
   {

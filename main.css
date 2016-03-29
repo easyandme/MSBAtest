@@ -189,7 +189,7 @@ body div#start {
     color: #fff;
     outline: none;
     border-radius: 11px;
-    background-color: #A16AEC;
+    background-color: #A978EC;
     text-align: left;
     font-size: 15px;
     border-color: #fff;
@@ -244,7 +244,7 @@ body div#start {
 }
 .result_yours {
   position: absolute;
-  top: 50px;
+  top: 42px;
   width: 80%;
   left: 10%;
 }
@@ -256,7 +256,7 @@ body div#start {
   text-align: center;
   width: 100%;
   color: #DE650C;
-  margin-top: -18px;
+  margin-top: -16px;
   font-family: ralewaybold, HelveticaNeue;
 } 
 .mark {
@@ -368,15 +368,32 @@ img[alt="des"] {
 }
 .follow {
   position: absolute;
-  top: 330px;
-  display: table;
+  top: 330px; 
   left: 50%;
   background-color: #7ed321;
   color: #fff;
+  font-size: 14px;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
+  display: none;
+}
+.post {
+  position: absolute;
+  top: 330px;
+  display: none;
+  left: 50%;
+  background-color: #7ed321;
+  color: #fff;
+  font-size: 13px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.post_link {
+  color: #fff;
 }
 span#busuanzi_container_site_uv {
     display: none;
