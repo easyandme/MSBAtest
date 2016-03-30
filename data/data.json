@@ -209,7 +209,8 @@
     "C": {
       "describe": "没上百",
       "bonus": 0,
-      "b_score": 1
+      "b_score": 1,
+      "wow": 1
     } 
   } 
 ]

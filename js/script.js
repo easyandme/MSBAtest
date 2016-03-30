@@ -96,14 +96,14 @@ $('.choice').click(function() {
       if (n > 13) { 
         $('.quiz, #progressbar').remove();
         $('.logo').removeClass('hinge animatedSlow');
-        $('.result, .slogan, .footer').css('display', 'block').addClass('fadeInUp animatedSlow');
-      var pretext = ''; 
+        $('.result, .slogan, .footer').css('display', 'block').addClass('fadeInUp animatedSlow'); 
       var perc, quotient;
+
       //"if" statements look stupid? fastest though
-      if (s >= 90) {
+      if (s >= 96 && gmat !== 1) {
         s = Math.floor(Math.random()*5) + 95; 
         perc = "申请BA牛校一申一个准"; 
-      } else if ( s > 70 && s < 90) { 
+      } else if ( s > 70 && s < 96) { 
         s = Math.floor(Math.random()*15) + 79; 
         perc = "用心准备会很有希望哦";
       } else if ( s > 50 && s <= 70) { 
@@ -128,7 +128,17 @@ $('.choice').click(function() {
             $(this).text(Math.ceil(now));
           }
       }); 
-      document.title = pretext + '我与BA的契合度是' + quotient + '%';
+
+      //title
+      if (s >= 79 ) {
+        var titles = ['竟有一个专业和我的契合度如此之高...','原来我一直选错了专业...','命中注定爱上你，我的BA女神'];
+        var index = Math.floor(Math.random()*3);
+        document.title = titles[index]; 
+      } else {
+        document.title = '看来要追BA女神，我还要多多努力啊...';
+      }
+
+      //tags
       if (passion >= 6) {
         $('.d3').addClass('highlighted');
       } else if (passion >= 4 && passion < 6) {
@@ -136,12 +146,12 @@ $('.choice').click(function() {
       } else {
         $('.d1').addClass('highlighted');  
       }
-      if (bg >= 8) {
+      if (bg >= 8 && gmat !== 1) {
         $('.a3').addClass('highlighted');
         $('.follow').css('display','none');
         $('.post').css('display','table');
         $('.post_link').text('想在美国实习？你有CPT么！').attr('href','http://mp.weixin.qq.com/s?__biz=MzI4NDE1NTM0MQ==&mid=403599888&idx=1&sn=1b714b16259273cb19455115352c19ec&scene=1&srcid=0329N0QLZ5m5dKkHd9Uiwjeu#wechat_redirect');
-      } else if (bg >= 4 && bg < 7) {
+      } else if (bg >= 4 && bg < 7 && gmat !== 1) {
         $('.a2').addClass('highlighted'); 
         $('.follow').css('display','none'); 
         $('.post').css('display','table');
@@ -184,18 +194,14 @@ $('.choice').click(function() {
         $('.follow').css('display','table'); 
         $('.post').css('display','none'); 
       }
-      if (gmat == 1) {
+      if (gmat == 1) {  
           $('.follow').css('display','none');
           $('.post').css('display','table');
           $('.post_link').text('BBC学姐一战GMAT770心经').attr('href','http://mp.weixin.qq.com/s?__biz=MzI4NDE1NTM0MQ==&mid=404046836&idx=1&sn=6516691975f9b99bef122d7655e8423c&scene=0#wechat_redirect');
       }
     }
 });
- 
-setInterval(function(){
-  $("#start_btn").toggleClass("shake animatedDelayed3");
-  $(".pointer").toggleClass("bounce animated"); 
-}, 2500);
+  
 
 /*All the appending stuff*/
 var p = "<div hidden id='progressbar'><div><span id='pg'>0/13</span></div></div></div>";
