@@ -83,7 +83,7 @@
     } 
   },
   {
-    "describe": "<b>你对BA是什么有基本的了解吗？</b>",   
+    "describe": "<b>你对<span style='font-family:noto;margin-left:1px;'>BA</span>是什么有基本的了解吗？</b>",   
     "genre": "passion",
     "A": {
       "describe": "有点了解",
