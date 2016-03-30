@@ -194,7 +194,7 @@ $('.choice').click(function() {
         $('.follow').css('display','table'); 
         $('.post').css('display','none'); 
       }
-      if (gmat == 1) {  
+      if (gmat >= 1) {  
           $('.follow').css('display','none');
           $('.post').css('display','table');
           $('.post_link').text('BBC学姐一战GMAT770心经').attr('href','http://mp.weixin.qq.com/s?__biz=MzI4NDE1NTM0MQ==&mid=404046836&idx=1&sn=6516691975f9b99bef122d7655e8423c&scene=0#wechat_redirect');
