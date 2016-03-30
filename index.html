@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> 
 	<title>测测你适不适合Business Analytics</title>
 	<link rel="stylesheet" href="./bootstrap.min.css">
-	<link rel="stylesheet" href="./main.css">
+	<link rel="stylesheet" href="./main.min.css">
 	</head>
 <body class="fadeIn animated noHover">
     <div style="margin:0 auto;display:none;">
@@ -143,6 +143,9 @@
 	  ga('create', 'UA-38451886-9', 'auto');
 	  ga('send', 'pageview');
 
+	 $('body').on('click', '#post', function() {
+	   ga('send', 'event', 'button', 'click', 'click_for_post');
+	 });
 	</script>
 </body> 
 </html>
