@@ -197,7 +197,7 @@ $('.choice').click(function() {
       if (gmat >= 1) {  
           $('.follow').css('display','none');
           $('.post').css('display','table');
-          $('.post_link').text('BBC学姐一战GMAT770心经').attr('href','http://mp.weixin.qq.com/s?__biz=MzI4NDE1NTM0MQ==&mid=404046836&idx=1&sn=6516691975f9b99bef122d7655e8423c&scene=0#wechat_redirect');
+          $('.post_link').html('<span style="font-family:noto;margin-left:1px;">BBC</span>学姐一战<span style="font-family:noto;margin-left:1px;">GMAT760</span>心经').attr('href','http://mp.weixin.qq.com/s?__biz=MzI4NDE1NTM0MQ==&mid=404046836&idx=1&sn=6516691975f9b99bef122d7655e8423c&scene=0#wechat_redirect');
       }
     }
 });
