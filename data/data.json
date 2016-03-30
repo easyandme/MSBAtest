@@ -60,7 +60,7 @@
       "s_score": 2
     },
     "B": {
-      "describe": "在学/准备学",
+      "describe": "在学<span style='font-family:noto;margin-left:1px;'>/</span>准备学",
       "bonus": 5,
       "s_score": 1
     },
@@ -128,7 +128,7 @@
     }
   },
   {
-    "describe": "<b>你未来希望从事<span style='font-family:noto;'>Analytics/Consultant</span>相关工作吗</b>", 
+    "describe": "<b>你未来希望从事<span style='font-family:noto;'>Analytics/Consultant</span>相关工作吗？</b>", 
     "image": "<img class='appendimage' alt='appendimage' src='./images/work.gif' >",
     "genre": "passion",
     "A": { 
@@ -180,7 +180,7 @@
     } 
   },
   {
-    "describe": "<b>你的<span style='font-family:noto;margin-left:1px;'>GMAT/GRE</span>上700/320了吗？</b>", 
+    "describe": "<b>你的<span style='font-family:noto;margin-left:1px;'>GMAT/GRE</span>上<span style='font-family:noto;margin-left:1px;'>700/320</span>了吗？</b>", 
     "genre": "bg",
     "A": { 
       "describe": "必须的",
@@ -197,7 +197,7 @@
     "describe": "<b>你的托福上100了吗？</b>", 
     "genre": "bg",
     "A": {
-      "describe": "Waive~/110+",
+      "describe": "<span style='font-family:noto;margin-left:1px;'>Waive~/110</span>+",
       "bonus": 8,
       "b_score": 1
     }, 
