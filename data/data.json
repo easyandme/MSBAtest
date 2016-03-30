@@ -191,7 +191,12 @@
       "describe": "还在刷",
       "bonus": 7,
       "wow": 1
-    } 
+    }, 
+    "C": {
+      "describe": "<span style='font-family:noto;'>GMAT</span>是什么鬼？",
+      "bonus": 0,
+      "wow": 1
+    }
   },
   {
     "describe": "<b>你的托福上100了吗？</b>", 
