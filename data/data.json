@@ -33,7 +33,7 @@
     } 
   },
   {
-    "describe": "<b>你是否使用过统计软件 如R, STATA, SAS等？</b>",
+    "describe": "<b>你是否使用过统计软件 如<span style='font-family:noto;'>R, STATA, SAS</span>等？</b>",
     "image": "<img class='appendimage' alt='appendimage' src='./images/access.gif' >", 
     "genre": "soft",
     "A": {
@@ -51,7 +51,7 @@
     }
   },
   {
-    "describe": "<b>你是否学习过至少一门编程语言，如C, Java, Python？</b>", 
+    "describe": "<b>你是否学习过至少一门编程语言，如<span style='font-family:noto;'>C, Java, Python</span>？</b>", 
     "image": "<img class='appendimage' alt='appendimage' src='./images/java.gif' >", 
     "genre": "soft",
     "A": {
@@ -128,7 +128,7 @@
     }
   },
   {
-    "describe": "<b>你未来希望从事的工作Analytics/Consultant相关工作吗</b>", 
+    "describe": "<b>你未来希望从事<span style='font-family:noto;'>Analytics/Consultant</span>相关工作吗</b>", 
     "image": "<img class='appendimage' alt='appendimage' src='./images/work.gif' >",
     "genre": "passion",
     "A": { 
@@ -167,7 +167,7 @@
     }
   }, 
   {
-    "describe": "<b>你了解BA相关院校吗？</b>", 
+    "describe": "<b>你了解<span style='font-family:noto;margin-left:1px;'>BA</span>相关院校吗？</b>", 
     "genre": "passion",
     "A": {
       "describe": "了解过",
@@ -180,7 +180,7 @@
     } 
   },
   {
-    "describe": "<b>你的GMAT/GRE上700/320了吗？</b>", 
+    "describe": "<b>你的<span style='font-family:noto;margin-left:1px;'>GMAT/GRE</span>上700/320了吗？</b>", 
     "genre": "bg",
     "A": { 
       "describe": "必须的",
